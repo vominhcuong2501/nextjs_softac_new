@@ -6,7 +6,7 @@ import React from 'react'
 
 const effectVariants = {
     // =========================
-    // Fade Effects
+    // Fade Effect: Fade effect, appear/disappear.
     // =========================
     none: {},
     fadeIn: {
@@ -94,7 +94,7 @@ const effectVariants = {
     },
 
     // =========================
-    // Bounce & Jump Effects
+    // Bounce & Jump Effect: Bounce up/down effect.
     // =========================
     jump: {
         animate: { y: [0, 50, 0] },
@@ -197,7 +197,7 @@ const effectVariants = {
     },
 
     // =========================
-    // Scale & Pulse Effects
+    // Scale & Pulse Effect: Zoom in/out, pulse effect.
     // =========================
     scaleUpOne: {
         animate: { scale: [1, 0.85, 1] },
@@ -213,7 +213,7 @@ const effectVariants = {
     },
 
     // =========================
-    // Rotate Effects
+    // Rotate Effect: Rotate effect in all directions.
     // =========================
     rotated: {
         animate: { rotate: [0, 360] },
@@ -268,7 +268,7 @@ const effectVariants = {
     },
 
     // =========================
-    // Flip Effects (3D)
+    // Flip Effect: 3D flip effect.
     // =========================
     flip: {
         animate: [
@@ -296,7 +296,7 @@ const effectVariants = {
     },
 
     // =========================
-    // Skew & LightSpeed Effects
+    // Skew & LightSpeed ​​Effect: Tilt/tilt, light speed effect.
     // =========================
     lightSpeedIn: {
         initial: { opacity: 0, x: '100%', skewX: -30 },
@@ -311,7 +311,7 @@ const effectVariants = {
     },
 
     // =========================
-    // Wobble, Shake, Swing, Tada Effects
+    // Wobble, Shake, Swing, Tada Effect: Vibrate, shake, shake hard, shake lightly.
     // =========================
     shake: {
         animate: { x: [0, -10, 10, -10, 10, -10, 10, 0] },
@@ -337,7 +337,7 @@ const effectVariants = {
     },
 
     // =========================
-    // Zoom Effects
+    // Zoom Effect: Zoom in/out effect.
     // =========================
     zoomIn: {
         initial: { opacity: 0, scale: 0.3 },
@@ -400,7 +400,7 @@ const effectVariants = {
     },
 
     // =========================
-    // Slide Effects
+    // Slide Effect: Slide effect in all directions.
     // =========================
     slideInDown: {
         initial: { opacity: 0, y: -2000 },
@@ -425,7 +425,7 @@ const effectVariants = {
     },
 
     // =========================
-    // Roll & Hinge Effects
+    // Roll & Hinge Effect: Roll, Hinge effect.
     // =========================
     hinge: {
         animate: [
@@ -444,7 +444,7 @@ const effectVariants = {
     },
 
     // =========================
-    // Misc & Custom Effects
+    // Misc & Custom Effect: Special, custom effect.
     // =========================
     prXOne: {
         animate: { x: [0, -15, 0] },
@@ -504,7 +504,7 @@ const effectVariants = {
     },
 
     // =========================
-    // Custom Fade/Slide Effects (tp prefix)
+    // Custom Fade/Slide Effect (tp prefix): Custom fade/slide effect.
     // =========================
     tpfadeUp: {
         initial: { opacity: 0, y: 90 },
@@ -538,7 +538,7 @@ const effectVariants = {
     },
 
     // =========================
-    // Sticky Scroll Effect
+    // Sticky Scroll Effect: Sticky effect when scrolling.
     // =========================
     scrollSticky: {
         variants: { hidden: { y: 100, opacity: 0, scale: 0.95 }, visible: { y: 0, opacity: 1, scale: 1 } },
@@ -549,7 +549,7 @@ const effectVariants = {
     },
 
     // =========================
-    // Side In/Out Effect
+    // Side In/Out Effect: Side In/Out slide effect.
     // =========================
     easeInSideOut: {
         initial: { x: '-100%', opacity: 0 },
@@ -565,21 +565,6 @@ const effectVariants = {
         }
     }
 }
-
-// Fade Effects: Hiệu ứng mờ dần, xuất hiện/biến mất.
-// Bounce & Jump Effects: Hiệu ứng nảy, nhảy lên/xuống.
-// Scale & Pulse Effects: Hiệu ứng phóng to/thu nhỏ, nhịp đập.
-// Rotate Effects: Hiệu ứng xoay các hướng.
-// Flip Effects: Hiệu ứng lật 3D.
-// Skew & LightSpeed Effects: Hiệu ứng nghiêng/skew, tốc độ ánh sáng.
-// Wobble, Shake, Swing, Tada Effects: Hiệu ứng rung, lắc, lắc mạnh, lắc nhẹ.
-// Zoom Effects: Hiệu ứng phóng to/thu nhỏ.
-// Slide Effects: Hiệu ứng trượt các hướng.
-// Roll & Hinge Effects: Hiệu ứng lăn, bản lề.
-// Misc & Custom Effects: Hiệu ứng đặc biệt, custom.
-// Custom Fade/Slide Effects (tp prefix): Hiệu ứng fade/slide tuỳ chỉnh.
-// Sticky Scroll Effect: Hiệu ứng sticky khi cuộn.
-// Side In/Out Effect: Hiệu ứng trượt vào/ra từ cạnh.
 
 export type MotionEffects = keyof typeof effectVariants
 
