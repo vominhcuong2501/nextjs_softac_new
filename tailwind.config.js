@@ -26,10 +26,7 @@ const tailwindConfig = {
           sm: '576px',
           md: '768px',
           lg: '992px',
-          xl: '1200px',
-          '2xl': '1400px',
-          '3xl': '1600px',
-          '4xl': '1800px'
+          xl: '1232px',
         },
         padding: {
           DEFAULT: '16px'
@@ -225,7 +222,7 @@ const tailwindConfig = {
         pink: {
           DEFAULT: '#FF94BA'
         },
-        grey: {
+        gray: {
           1: '#5F6368',
           2: '#9A9DA7',
           3: '#F5F5F5',
@@ -412,6 +409,9 @@ const tailwindConfig = {
         'cubic-bezier-4': 'cubic-bezier(0.2, 0.8, 0.2, 1)',
         'cubic-bezier-5': 'cubic-bezier(0.075, 0.82, 0.165, 1)',
         'cubic-bezier-6': 'cubic-bezier(.165,.84,.44,1)'
+      },
+      transitionDuration: {
+        '900': '900ms',
       }
     }
   },
