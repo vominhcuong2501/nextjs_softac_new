@@ -22,23 +22,19 @@ const tailwindConfig = {
       container: {
         center: true,
         screens: {
-          xs: '480px',
-          sm: '576px',
-          md: '768px',
-          lg: '992px',
-          xl: '1232px',
+          xl: '1312px',
         },
         padding: {
           DEFAULT: '16px'
         }
       },
       fontFamily: {
-        body: ['"Plus Jakarta Sans"', 'sans-serif'],
-        heading: ['"Plus Jakarta Sans"', 'sans-serif'],
-        mont: ['"Montserrat Alternates"', 'sans-serif'],
-        urban: ['"Urbanist"', 'sans-serif'],
-        dm: ['"DM Serif Display"', 'serif'],
-        fa: ['"Font Awesome 5 Pro"']
+        body: ['Plus Jakarta Sans', 'sans-serif'],
+        heading: ['Plus Jakarta Sans', 'sans-serif'],
+        mont: ['Montserrat Alternates', 'sans-serif'],
+        urban: ['Urbanist', 'sans-serif'],
+        dm: ['DM Serif Display', 'serif'],
+        fa: ['Font Awesome 5 Pro']
       },
       fontSize: {
         xs: ['12px', '1'],
@@ -53,6 +49,7 @@ const tailwindConfig = {
         14: '14px',
         15: '15px',
         16: '16px',
+        17: '17px',
         18: '18px',
         20: '20px',
         22: '22px',

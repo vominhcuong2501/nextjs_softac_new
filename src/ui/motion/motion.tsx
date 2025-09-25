@@ -16,7 +16,7 @@ const effectVariants = {
         viewport: { once: true }
     },
     fadeInUp: {
-        initial: { y: 20, opacity: 0 },
+        initial: { y: 40, opacity: 0 },
         whileInView: { y: 0, opacity: 1 },
         transition: { duration: 0.8 },
         viewport: { once: true }

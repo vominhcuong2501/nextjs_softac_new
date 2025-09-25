@@ -20,104 +20,104 @@ import brand_logo_8 from '../../public/assets/img/project/project-inner-brand-4.
 import brand_logo_9 from '../../public/assets/img/project/project-inner-brand-6.png'
 
 const portfolio_data = [
-    {
-        id: 1,
-        thumb_img: thumb_img_1,
-        brand_logo: brand_logo_1,
-        job_title: 'Design Wok, Branding',
-        title: <>Airbnb Upgrade</>,
-        des: <>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</>,
-        delay: '.5s',
-        category: 'Design Work',
-        filter_id: ['all', 'Design Work', 'Branding', 'Development', 'Illusutration', 'App Design']
-    },
-    {
-        id: 2,
-        thumb_img: thumb_img_2,
-        brand_logo: brand_logo_2,
-        job_title: 'Development, App Design',
-        title: <>Mobile App Design</>,
-        des: <>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</>,
-        delay: '.5s',
-        category: 'Branding',
-        filter_id: ['all', 'Design Work', 'Branding', 'Development', 'Illusutration', 'App Design']
-    },
-    {
-        id: 3,
-        thumb_img: thumb_img_3,
-        brand_logo: brand_logo_3,
-        job_title: 'Branding, Illusutration',
-        title: <>Branding & Identity</>,
-        des: <>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</>,
-        delay: '.5s',
-        category: 'Design Work',
-        filter_id: ['all', 'Design Work', 'Branding', 'Development', 'Illusutration', 'App Design']
-    },
-    {
-        id: 4,
-        thumb_img: thumb_img_4,
-        brand_logo: brand_logo_4,
-        job_title: 'Design Wok, Illusutration',
-        title: <>Muckup Design</>,
-        des: <>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</>,
-        delay: '.5s',
-        category: 'Development',
-        filter_id: ['all', 'Design Work', 'Branding', 'Development', 'Illusutration', 'App Design']
-    },
-    {
-        id: 5,
-        thumb_img: thumb_img_5,
-        brand_logo: brand_logo_5,
-        job_title: 'Design Wok, Branding',
-        title: <>Realistic Scenarios</>,
-        des: <>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</>,
-        delay: '.5s',
-        category: 'Illusutration',
-        filter_id: ['all', 'Design Work', 'Branding', 'Development', 'Illusutration', 'App Design']
-    },
-    {
-        id: 6,
-        thumb_img: thumb_img_6,
-        brand_logo: brand_logo_6,
-        job_title: 'Design Wok, App Design',
-        title: <>Design System & Ul Kit</>,
-        des: <>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</>,
-        delay: '.5s',
-        category: 'Design Work',
-        filter_id: ['all', 'Design Work', 'Branding', 'Development', 'Illusutration', 'App Design']
-    },
-    {
-        id: 7,
-        thumb_img: thumb_img_7,
-        brand_logo: brand_logo_7,
-        job_title: 'Design Wok, Illusutration',
-        title: <>Web Design</>,
-        des: <>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</>,
-        delay: '.5s',
-        category: 'App Design',
-        filter_id: ['all', 'Design Work', 'Branding', 'Development', 'Illusutration', 'App Design']
-    },
-    {
-        id: 8,
-        thumb_img: thumb_img_8,
-        brand_logo: brand_logo_8,
-        job_title: 'Design Wok, Branding',
-        title: <>Landing Page Design</>,
-        des: <>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</>,
-        delay: '.5s',
-        category: 'Development',
-        filter_id: ['all', 'Design Work', 'Branding', 'Development', 'Illusutration', 'App Design']
-    },
-    {
-        id: 9,
-        thumb_img: thumb_img_9,
-        brand_logo: brand_logo_9,
-        job_title: 'Design Wok, App Design',
-        title: <>Mobile Design</>,
-        des: <>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</>,
-        delay: '.5s',
-        category: 'App Design',
-        filter_id: ['all', 'Design Work', 'Branding', 'Development', 'Illusutration', 'App Design']
-    }
+  {
+    id: 1,
+    thumb_img: thumb_img_1,
+    brand_logo: brand_logo_1,
+    job_title: 'Design Wok, Branding',
+    title: <>Airbnb Upgrade</>,
+    des: <>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</>,
+    delay: '.5s',
+    category: 'Design Work',
+    filter_id: ['all', 'Design Work', 'Branding', 'Development', 'Illusutration', 'App Design']
+  },
+  {
+    id: 2,
+    thumb_img: thumb_img_2,
+    brand_logo: brand_logo_2,
+    job_title: 'Development, App Design',
+    title: <>Mobile App Design</>,
+    des: <>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</>,
+    delay: '.5s',
+    category: 'Branding',
+    filter_id: ['all', 'Design Work', 'Branding', 'Development', 'Illusutration', 'App Design']
+  },
+  {
+    id: 3,
+    thumb_img: thumb_img_3,
+    brand_logo: brand_logo_3,
+    job_title: 'Branding, Illusutration',
+    title: <>Branding & Identity</>,
+    des: <>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</>,
+    delay: '.5s',
+    category: 'Design Work',
+    filter_id: ['all', 'Design Work', 'Branding', 'Development', 'Illusutration', 'App Design']
+  },
+  {
+    id: 4,
+    thumb_img: thumb_img_4,
+    brand_logo: brand_logo_4,
+    job_title: 'Design Wok, Illusutration',
+    title: <>Muckup Design</>,
+    des: <>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</>,
+    delay: '.5s',
+    category: 'Development',
+    filter_id: ['all', 'Design Work', 'Branding', 'Development', 'Illusutration', 'App Design']
+  },
+  {
+    id: 5,
+    thumb_img: thumb_img_5,
+    brand_logo: brand_logo_5,
+    job_title: 'Design Wok, Branding',
+    title: <>Realistic Scenarios</>,
+    des: <>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</>,
+    delay: '.5s',
+    category: 'Illusutration',
+    filter_id: ['all', 'Design Work', 'Branding', 'Development', 'Illusutration', 'App Design']
+  },
+  {
+    id: 6,
+    thumb_img: thumb_img_6,
+    brand_logo: brand_logo_6,
+    job_title: 'Design Wok, App Design',
+    title: <>Design System & Ul Kit</>,
+    des: <>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</>,
+    delay: '.5s',
+    category: 'Design Work',
+    filter_id: ['all', 'Design Work', 'Branding', 'Development', 'Illusutration', 'App Design']
+  },
+  {
+    id: 7,
+    thumb_img: thumb_img_7,
+    brand_logo: brand_logo_7,
+    job_title: 'Design Wok, Illusutration',
+    title: <>Web Design</>,
+    des: <>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</>,
+    delay: '.5s',
+    category: 'App Design',
+    filter_id: ['all', 'Design Work', 'Branding', 'Development', 'Illusutration', 'App Design']
+  },
+  {
+    id: 8,
+    thumb_img: thumb_img_8,
+    brand_logo: brand_logo_8,
+    job_title: 'Design Wok, Branding',
+    title: <>Landing Page Design</>,
+    des: <>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</>,
+    delay: '.5s',
+    category: 'Development',
+    filter_id: ['all', 'Design Work', 'Branding', 'Development', 'Illusutration', 'App Design']
+  },
+  {
+    id: 9,
+    thumb_img: thumb_img_9,
+    brand_logo: brand_logo_9,
+    job_title: 'Design Wok, App Design',
+    title: <>Mobile Design</>,
+    des: <>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</>,
+    delay: '.5s',
+    category: 'App Design',
+    filter_id: ['all', 'Design Work', 'Branding', 'Development', 'Illusutration', 'App Design']
+  }
 ]
 export default portfolio_data

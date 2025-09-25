@@ -2,16 +2,7 @@ import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 import Footer from '@/ui/footers/footer'
-
-const geistSans = Geist({
-    variable: '--font-geist-sans',
-    subsets: ['latin']
-})
-
-const geistMono = Geist_Mono({
-    variable: '--font-geist-mono',
-    subsets: ['latin']
-})
+import { Header } from '@/ui'
 
 export const metadata: Metadata = {
     title: 'Create Next App',
@@ -26,13 +17,16 @@ export default function RootLayout({
     return (
         <html lang='en'>
             <head>
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+                <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&family=Montserrat+Alternates:wght@400;700&family=Urbanist:wght@400;700&family=DM+Serif+Display&display=swap" rel="stylesheet" />
                 <link rel='stylesheet' href='/assets/css/flaticon.css' />
-                <link rel='stylesheet' href='font-awesome-pro.css' />
+                <link rel="stylesheet" href='/assets/css/font-awesome-pro.css' />
             </head>
-            <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+            <body>
+                <Header />
                 {children}
-
-                <Footer style_contact={true} />
+                <Footer />
             </body>
         </html>
     )
