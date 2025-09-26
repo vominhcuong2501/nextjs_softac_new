@@ -2,7 +2,7 @@ export const MENU_DATA = [
   {
     id: 1,
     mega_menu: false,
-    has_dropdown: false,
+    has_dropdown: true,
     title: 'Home',
     link: '/',
     active: 'active',

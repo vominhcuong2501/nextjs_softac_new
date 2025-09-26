@@ -6,7 +6,7 @@ import Image from 'next/image'
 import { DISPLAY_DEVICE, SITE_LOGO, SITE_TITLE } from '@/constants'
 import { NavMenu } from '../nav-menu'
 import { useDisplay } from '@/hooks'
-import commonData from './../../locale/en/common.json'
+import commonData from '../../locale/en/common.json'
 import { Sidebar } from '../sidebar'
 
 export const Header = () => {

@@ -4,17 +4,17 @@ import Image from 'next/image'
 import { FOOTER_CONTENT } from '@/data'
 import { SIDEBAR_CONTENT } from '@/data/sidebar'
 import { SITE_LOGO, SITE_TITLE } from '@/constants'
+import { MobileMenus } from '../menu-mobile'
 
 export const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
   return (
     <>
       <div
-        className={`bg-center bg-cover bg-no-repeat fixed top-0 max-w-[80%] sm:max-w-[480px] w-full bottom-0 bg-black !z-20 px-6 py-10 sm:p-[50px] overflow-y-scroll no-scrollbar transition-all duration-500 ease-cubic-bezier-2 ${
-          sidebarOpen ? 'right-0 visible opacity-100' : '-right-full invisible opacity-0'
-        }`}
+        className={`bg-center bg-cover bg-no-repeat fixed top-0 max-w-[85%] sm:max-w-[480px] w-full bottom-0 bg-black !z-20 px-6 py-10 sm:p-[50px] overflow-y-scroll no-scrollbar transition-all duration-500 ease-cubic-bezier-2 ${sidebarOpen ? 'right-0 visible opacity-100' : '-right-full invisible opacity-0'
+          }`}
       >
         <button
-          className='absolute right-0 top-0 transition-all duration-300 ease-cubic-bezier-2 w-[50px] h-[50px] bg-white text-black'
+          className='absolute right-0 top-0 w-[50px] h-[50px] bg-white text-black hover:text-theme-3'
           onClick={() => setSidebarOpen(false)}
         >
           <i className='text-32 fal fa-times'></i>
@@ -30,7 +30,7 @@ export const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
             className='max-w-[157px] w-full mx-auto'
           />
         </Link>
-        <div className='mobile-menu mean-container'>{/* <MobileMenus /> */}</div>
+        <MobileMenus />
         <div className='mt-10 text-center'>
           <h4 className='text-24 text-white font-bold capitalize'>{SIDEBAR_CONTENT.text_instagram}</h4>
           <div className='mt-7 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-[180px] sm:max-w-full w-full mx-auto'>
@@ -73,9 +73,8 @@ export const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
         </div>
       </div>
       <div
-        className={`fixed top-0 left-0 w-screen h-screen bg-gray-17 !z-10 transition-all duration-500 ease-in-out ${
-          sidebarOpen ? 'visible opacity-100' : 'invisible opacity-0'
-        }`}
+        className={`fixed top-0 left-0 w-screen h-screen bg-gray-17 !z-10 transition-all duration-500 ease-in-out ${sidebarOpen ? 'visible opacity-100' : 'invisible opacity-0'
+          }`}
         onClick={() => setSidebarOpen(false)}
       ></div>
     </>
