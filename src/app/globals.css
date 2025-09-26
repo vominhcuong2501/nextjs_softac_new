@@ -30,6 +30,391 @@
   }
 }
 
+@layer utilities {
+  /* Blue button */
+  .tp-btn {
+    @apply inline-block bg-blue-5 text-white h-[45px] leading-[45px] rounded-[30px] px-[35px] text-[15px] font-semibold text-center capitalize relative overflow-hidden z-[1] transition-all duration-500;
+    @apply xs:h-[45px] xs:px-[25px] xs:text-[15px];
+  }
+  .tp-btn span {
+    @apply relative z-[5] transition-all duration-300 text-white;
+    transition-delay: 0.3s;
+  }
+  .tp-btn:hover span {
+    @apply text-white;
+    transition-delay: 0.1s;
+  }
+
+  /* White button */
+  .tp-btn-white {
+    @apply bg-white text-black h-[45px] leading-[45px] rounded-[30px] px-[35px] text-[15px] font-semibold text-center capitalize overflow-hidden transition-colors duration-400;
+    @apply xs:h-[45px] xs:px-[25px] xs:text-[15px];
+  }
+  .tp-btn-white span {
+    @apply relative z-[5] transition-all duration-500;
+    transition-delay: 0.1s;
+  }
+  .tp-btn-white:hover {
+    @apply text-black;
+    transition-duration: 0.5s;
+  }
+  .tp-btn-white:hover span.white-text {
+    @apply text-white;
+  }
+
+  /* Orange button */
+  .tp-btn-orange {
+    @apply inline-block bg-orange text-white h-[36px] leading-[36px] rounded-[30px] px-[30px] text-[15px] font-semibold text-center capitalize relative overflow-hidden z-[1] transition-all duration-500;
+    @apply xs:h-[36px] xs:px-[20px] xs:text-[14px];
+  }
+  .tp-btn-orange span {
+    @apply relative z-[99] transition-all duration-300 text-white;
+    transition-delay: 0.3s;
+  }
+  .tp-btn-orange:hover span {
+    @apply text-black;
+    transition-delay: 0.1s;
+  }
+
+  /* Green button small */
+  .tp-btn-green-sm {
+    @apply inline-block text-white font-mont h-[42px] leading-[42px] px-[30px] font-semibold text-[15px] text-center tracking-[-0.02em] relative overflow-hidden z-[1] transition-all duration-500 rounded-[10px] shadow-3;
+    background: linear-gradient(180deg, #b1ff36 -23%, #1d863c 100%);
+    @apply xs:h-[42px] xs:px-[25px] xs:text-[15px];
+  }
+  .tp-btn-green-sm:hover {
+    @apply shadow-4 -translate-y-[2px] text-white;
+  }
+
+  /* Green button large */
+  .tp-btn-green {
+    @apply inline-block text-white font-mont h-[52px] leading-[52px] px-[30px] font-semibold text-[16px] text-center tracking-[-0.02em] relative overflow-hidden z-[1] transition-all duration-500 rounded-[10px] shadow-3;
+    background: linear-gradient(180deg, #b1ff36 -23%, #1d863c 100%);
+    @apply xs:h-[52px] xs:px-[25px] xs:text-[16px];
+  }
+  .tp-btn-green:hover {
+    @apply shadow-4 -translate-y-[2px] text-white;
+  }
+
+  /* Blue button large with circle effect */
+  .tp-btn-blue-lg {
+    @apply inline-block bg-blue-5 shadow-2 rounded-[100px] text-white font-urban h-[60px] leading-[61px] px-[35px] font-bold text-[16px] text-center tracking-[0.02em] relative overflow-hidden z-[1] transition-all duration-1000;
+    position: relative;
+    @apply xs:h-[50px] xs:leading-[50px] xs:px-[25px] xs:text-[16px];
+  }
+  .tp-btn-blue-lg.purple-bg {
+    @apply bg-blue-3;
+  }
+  .tp-btn-blue-lg span {
+    @apply relative z-[5] transition-all duration-500 text-white;
+  }
+  .tp-btn-blue-lg:hover {
+    @apply text-white;
+  }
+  .tp-btn-blue-lg.purple-bg:hover {
+    @apply bg-transparent;
+  }
+  .tp-btn-blue-lg:hover span.text-color-black {
+    @apply text-black;
+  }
+  .tp-btn-blue-lg.circle-effect::after {
+    content: '';
+    background-color: #000;
+    border-radius: 95px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -100%;
+    bottom: -100%;
+    width: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition-duration: 1s;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow,
+      transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(0.14, 0, 0, 1.01);
+    will-change: transform;
+    z-index: -1;
+  }
+  .tp-btn-blue-lg.circle-effect:hover::after {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+
+  /* Blue button small */
+  .tp-btn-blue-sm {
+    @apply inline-block bg-blue-5 shadow-2 rounded-[100px] text-white font-urban h-[48px] leading-[48px] px-[35px] font-bold text-[16px] text-center tracking-[0.02em] relative overflow-hidden z-[1] transition-all duration-500;
+    @apply xs:h-[48px] xs:px-[25px] xs:text-[16px];
+  }
+  .tp-btn-blue-sm span {
+    @apply relative z-[5] transition-all duration-300 text-white;
+    transition-delay: 0.3s;
+  }
+  .tp-btn-blue-sm:hover span {
+    @apply text-white;
+    transition-delay: 0.1s;
+  }
+
+  /* Border blue button */
+  .tp-btn-border {
+    @apply inline-block text-white font-urban border border-blue-5 rounded-[100px] h-[60px] leading-[60px] px-[35px] font-bold text-[16px] text-center tracking-[0.02em] relative overflow-hidden z-[1];
+    @apply xs:h-[50px] xs:leading-[50px] xs:px-[25px] xs:text-[16px];
+  }
+  .tp-btn-border span {
+    @apply relative z-[5] transition-all duration-700 text-theme-1;
+  }
+  .tp-btn-border:hover {
+    @apply border-black;
+  }
+  .tp-btn-border:hover span {
+    @apply text-white;
+  }
+
+  /* White solid button */
+  .tp-btn-white-solid {
+    @apply inline-block text-white font-urban bg-white/25 backdrop-blur-[5px] rounded-[100px] h-[36px] px-[22px] font-bold text-[15px] leading-[36px] text-center tracking-[0.02em] relative overflow-hidden z-[1] transition-all duration-500;
+    @apply xs:h-[36px] xs:px-[15px] xs:text-[15px];
+  }
+
+  /* Yellow button */
+  .tp-btn-yellow {
+    @apply inline-block bg-yellow-5 rounded-[100px] h-[42px] px-[32px] font-medium text-[16px] leading-[42px] text-center tracking-[0.02em] relative overflow-hidden z-[1] transition-all duration-500;
+    @apply xs:h-[42px] xs:px-[20px] xs:text-[14px];
+  }
+  .tp-btn-yellow span {
+    @apply relative z-[5] transition-all duration-300 text-black;
+  }
+  .tp-btn-yellow.inner-color {
+    background: #ffce5a;
+    @apply text-black;
+  }
+  .tp-btn-yellow.inner-color:hover span {
+    @apply text-white;
+  }
+
+  /* Yellow button small */
+  .tp-btn-yellow-sm {
+    @apply inline-block text-black bg-yellow-5 backdrop-blur-[5px] rounded-[100px] h-[50px] px-[24px] font-medium text-[17px] leading-[50px] text-center relative overflow-hidden z-[1] transition-all duration-500;
+    @apply xs:h-[50px] xs:px-[15px] xs:text-[15px];
+  }
+
+  /* Yellow button large */
+  .tp-btn-yellow-lg {
+    @apply inline-block text-black bg-[#FFCE5A] rounded-[100px] h-[60px] px-[32px] font-semibold text-[16px] leading-[60px] text-center relative overflow-hidden z-[1] transition-all duration-1000;
+    position: relative;
+    @apply xs:h-[50px] xs:leading-[50px] xs:px-[25px] xs:text-[16px];
+  }
+  .tp-btn-yellow-lg.yellow-bg {
+    background-color: #f8ff35;
+  }
+  .tp-btn-yellow-lg::after {
+    content: '';
+    background-color: #fff;
+    border-radius: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -100%;
+    bottom: -100%;
+    width: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition-duration: 1s;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow,
+      transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(0.14, 0, 0, 1.01);
+    will-change: transform;
+    z-index: -1;
+  }
+  .tp-btn-yellow-lg:hover {
+    background-color: transparent;
+    @apply text-black;
+  }
+  .tp-btn-yellow-lg:hover::after {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+
+  /* Yellow border button */
+  .tp-btn-yellow-border {
+    @apply h-[60px] leading-[57px] pl-[38px] pr-[28px] rounded-[100px] border-2 border-yellow-5 text-yellow-5 text-[16px] font-semibold relative overflow-hidden z-[1] inline-block transition-all duration-300;
+    position: relative;
+    @apply xs:h-[50px] xs:leading-[47px] xs:pl-[18px] xs:pr-[18px] xs:text-[15px];
+  }
+  .tp-btn-yellow-border i {
+    @apply pl-[60px] relative z-[5] text-black text-[22px] align-middle;
+    transform: translateY(2px);
+  }
+  .tp-btn-yellow-border::before {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 60px;
+    background: #f8ff35;
+    z-index: -1;
+    transition: 0.3s;
+  }
+  .tp-btn-yellow-border:hover {
+    @apply text-black border-[#F8FF35];
+  }
+  .tp-btn-yellow-border:hover::before {
+    width: 100%;
+    background: #f8ff35;
+  }
+
+  /* Service button */
+  .tp-btn-service {
+    @apply h-[40px] leading-[35px] border border-white/10 text-yellow-5 rounded-[20px] inline-block relative z-[1] px-[30px] font-semibold text-[15px] transition-all duration-300;
+    border-width: 1.5px;
+    @apply xs:h-[40px] xs:px-[15px] xs:text-[15px];
+  }
+  .tp-btn-service:hover {
+    @apply bg-yellow-5 text-black border-yellow-5;
+  }
+
+  /* Grey button */
+  .tp-btn-grey {
+    @apply h-[60px] leading-[60px] text-black rounded-[30px] inline-block relative z-[1] px-[35px] font-semibold text-[16px] bg-white transition-all duration-1000 overflow-hidden;
+    position: relative;
+    @apply xs:h-[50px] xs:leading-[50px] xs:px-[25px] xs:text-[16px];
+  }
+  .tp-btn-grey::after {
+    content: '';
+    background-color: #000;
+    border-radius: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -100%;
+    bottom: -100%;
+    width: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition-duration: 1s;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow,
+      transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(0.14, 0, 0, 1.01);
+    will-change: transform;
+    z-index: -1;
+  }
+  .tp-btn-grey:hover {
+    background-color: transparent;
+    @apply text-white;
+  }
+  .tp-btn-grey:hover::after {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+
+  /* Purple button */
+  .tp-btn-purple {
+    @apply h-[40px] leading-[38px] text-black rounded-[30px] inline-block relative z-[1] px-[35px] font-semibold text-[14px] bg-gray-8 transition-all duration-300;
+    @apply xs:h-[40px] xs:px-[15px] xs:text-[14px];
+  }
+  .tp-btn-purple:hover {
+    @apply text-white bg-purple-2;
+  }
+
+  /* Purple button large */
+  .tp-btn-purple-lg {
+    @apply h-[60px] leading-[60px] text-white bg-purple-2 rounded-[30px] inline-block relative z-[1] px-[35px] font-semibold text-[16px] transition-all duration-300;
+    @apply xs:h-[50px] xs:leading-[50px] xs:px-[25px] xs:text-[16px];
+  }
+  .tp-btn-purple-lg:hover {
+    @apply text-white bg-purple-2;
+  }
+
+  /* Yellow solid button */
+  .tp-btn-yellow-solid {
+    @apply h-[60px] leading-[60px] text-black bg-[#DDFF7B] rounded-[30px] inline-block relative z-[1] px-[35px] font-semibold text-[16px] transition-all duration-300 overflow-hidden;
+    position: relative;
+    @apply xs:h-[50px] xs:leading-[50px] xs:px-[25px] xs:text-[16px];
+  }
+  .tp-btn-yellow-solid.circle-effect::after {
+    content: '';
+    background-color: #fff;
+    border-radius: 95px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -100%;
+    bottom: -100%;
+    width: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition-duration: 1s;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow,
+      transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(0.14, 0, 0, 1.01);
+    will-change: transform;
+    z-index: -1;
+  }
+  .tp-btn-yellow-solid.circle-effect:hover::after {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+
+  /* Price button */
+  .tp-btn-price {
+    @apply inline-flex items-center justify-center bg-blue-6 text-blue-5 h-[45px] leading-[45px] rounded-[30px] px-[35px] text-[15px] font-semibold text-center capitalize relative overflow-hidden z-[1] transition-all duration-500;
+    @apply xs:h-[45px] xs:px-[25px] xs:text-[15px];
+  }
+
+  /* Submit button */
+  .submit-btn {
+    @apply bg-blue-4 text-center h-[55px] px-[20px] inline-block leading-[55px] text-white font-semibold text-[16px];
+    @apply xs:h-[45px] xs:px-[15px] xs:text-[15px];
+  }
+  .submit-btn:hover {
+    @apply text-white;
+  }
+
+  /* Signin button */
+  .signin-btn {
+    @apply bg-blue-4 text-center h-[55px] px-[100px] inline-block leading-[55px] text-white font-semibold text-[16px] rounded-[12px];
+    @apply xs:h-[45px] xs:px-[25px] xs:text-[15px];
+  }
+  .signin-btn:hover {
+    background-color: #6b14fa;
+    @apply text-white;
+  }
+
+  /* Inner button */
+  .tp-btn-inner {
+    @apply inline-block bg-blue-4 text-white h-[50px] leading-[50px] rounded-[30px] px-[35px] text-[15px] font-semibold text-center capitalize relative overflow-hidden z-[1] transition-all duration-500;
+    @apply xs:h-[45px] xs:px-[25px] xs:text-[15px];
+  }
+  .tp-btn-inner span {
+    @apply relative z-[5] transition-all duration-300 text-white inline-block -translate-y-[2px];
+    transition-delay: 0.3s;
+  }
+  .tp-btn-inner:hover span {
+    @apply text-white;
+    transition-delay: 0.1s;
+  }
+  .tp-btn-inner.white-bg:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 8px 24px 0px rgba(25, 118, 41, 0.3);
+  }
+
+  /* Inner border button */
+  .tp-btn-inner-border {
+    @apply inline-block text-white h-[40px] leading-[36px] rounded-[30px] px-[30px] text-[15px] font-semibold text-center relative overflow-hidden z-[1] transition-all duration-500 border border-white/20;
+    border-width: 1.5px;
+    @apply xs:h-[36px] xs:px-[15px] xs:text-[15px];
+  }
+  .tp-btn-inner-border i {
+    @apply pl-[7px];
+    transform: rotate(45deg) translateY(-3px);
+  }
+  .tp-btn-inner-border:hover {
+    @apply text-yellow-5;
+  }
+}
+
+/* Scrollbar  */
 .no-scrollbar {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -47,4 +432,85 @@
 .scrollbar::-webkit-scrollbar {
   width: 6px;
   height: 2px;
+}
+/* End scroll  */
+
+/* Mouse Animate  */
+.cursor-outer {
+  margin-left: -15px;
+  margin-top: -15px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #6865ff;
+  box-sizing: border-box;
+  z-index: 10000000;
+  opacity: 0.5;
+  transition: all 0.08s ease-out;
+  cursor: none;
+}
+
+.mouseCursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  transform: translateZ(0);
+  text-align: center;
+  cursor: none;
+}
+
+.cursor-inner {
+  margin-left: -3px;
+  margin-top: -3px;
+  width: 6px;
+  height: 6px;
+  z-index: 10000001;
+  background-color: #6865ff;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out, margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.cursor-inner .cursor-big {
+  cursor: none;
+}
+
+.cursor-inner .cursor-big a {
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+.cursor-inner a {
+  color: #fff;
+  line-height: 100px;
+  transform: scale(0);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+  margin-left: 3px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.mouseCursor.cursor-big {
+  width: 100px;
+  height: 100px;
+  cursor: none;
+}
+
+.mouseCursor .cursor-big {
+  cursor: none;
+}
+
+.mouseCursor .cursor-big .cursor-outer {
+  display: none;
+}
+/* End mouse animate  */
+
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .tp-hero-five-2-thumb {
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
+  }
 }

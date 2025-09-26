@@ -1,6 +1,6 @@
 import React, { SVGAttributes } from "react";
 
-const EmailIcon = ({ ...props }: SVGAttributes<SVGSVGElement>) => {
+export const EmailIcon = ({ ...props }: SVGAttributes<SVGSVGElement>) => {
   return (
     <svg
       width="18"
@@ -31,4 +31,3 @@ const EmailIcon = ({ ...props }: SVGAttributes<SVGSVGElement>) => {
   );
 };
 
-export default EmailIcon;

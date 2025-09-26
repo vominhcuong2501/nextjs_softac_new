@@ -1,5 +1,3 @@
-import { text } from 'stream/consumers'
-
 export const FOOTER_CONTENT = {
   info: 'Build a modern and creative website with crealand',
   phone: '+806 (000) 88 99',
@@ -53,5 +51,7 @@ export const FOOTER_CONTENT = {
     }
   ],
   text_copyright: 'Full Copyright & Design By',
-  text_theme_pure: '@Theme pure'
+  text_theme_pure: '@Theme pure',
+  txt_our_newsletter: 'Our Newsletter',
+  txt_social_media: 'Social media'
 }

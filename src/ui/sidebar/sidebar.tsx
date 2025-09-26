@@ -1,8 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
-import { FOOTER_CONTENT } from '@/data'
-import { SIDEBAR_CONTENT } from '@/data/sidebar'
+import { FOOTER_CONTENT, SIDEBAR_CONTENT } from '@/data'
 import { SITE_LOGO, SITE_TITLE } from '@/constants'
 import { MobileMenus } from '../menu-mobile'
 

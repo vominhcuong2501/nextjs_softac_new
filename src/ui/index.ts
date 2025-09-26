@@ -9,3 +9,5 @@ export * from './headers'
 export * from './menu-mobile'
 
 export * from './sidebar'
+
+export * from './animate-mouse'

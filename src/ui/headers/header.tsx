@@ -16,7 +16,7 @@ export const Header = () => {
 
   return (
     <>
-      <header className='bg-white sticky top-0 shadow-1 py-4 lg:py-0'>
+      <header className='bg-white fixed top-0 shadow-1 py-4 lg:py-0 z-10 w-full'>
         <div className='container flex items-center justify-between gap-5'>
           <Link href='/' target='_self' title={SITE_TITLE}>
             <Image

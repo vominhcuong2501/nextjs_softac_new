@@ -2,14 +2,10 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { PhoneFour } from '@/svg/phone-4'
-import EmailFour from '@/svg/email-4'
-import EmailIcon from '@/svg/email'
-import RightArrow from '@/svg/right-arrow'
-import commonData from './../../locale/en/common.json'
 import { SITE_LOGO, SITE_TITLE } from '@/constants'
 import { Motion } from '../motion'
 import { FOOTER_CONTENT } from '@/data'
+import { EmailFour, EmailIcon, PhoneFour, RightArrow } from '@/svg'
 
 const Footer = () => {
     const { info, phone, email, footer_lisks, social_links, text_copyright, text_theme_pure } = FOOTER_CONTENT
@@ -19,7 +15,7 @@ const Footer = () => {
             <div className='border-b border-gray-41 py-5 lg:py-10 leading-1-5'>
                 <div className='container'>
                     <div className='grid grid-cols-1 sm:grid-cols-2 lg:flex lg:justify-between gap-5'>
-                        <Motion effect='fadeInUp' className='md:max-w-[275px] w-full duration-900' transition={{ delay: 0 }}>
+                        <Motion effect='fadeInUp' className='md:max-w-[275px] w-full'>
                             <Link href='/' target='_self' title={SITE_TITLE} className='block'>
                                 <Image
                                     src={SITE_LOGO.DARK.SOURCE}
@@ -56,7 +52,7 @@ const Footer = () => {
                         </Motion>
 
                         {footer_lisks.map((item, i) => (
-                            <Motion effect='fadeInUp' key={i} transition={{ delay: 0.5 + i * 0.3 }} className='duration-900'>
+                            <Motion effect='fadeInUp' key={i} transition={{ delay: 0.3 + i * 0.3 }} className='duration-900'>
                                 <h4 className='text-22 font-urban text-black-5 font-semibold'>{item.title}</h4>
                                 <ul className='mt-4 lg:mt-7 text-16 text-gray-10 font-medium flex flex-col gap-1.5 lg:gap-2.5'>
                                     {item.links.map((link, i) => (
@@ -70,10 +66,10 @@ const Footer = () => {
 
                         <Motion
                             effect='fadeInUp'
-                            className='md:max-w-[334px] w-full duration-900'
-                            transition={{ delay: 0.5 + footer_lisks.length * 0.3 }}
+                            className='md:max-w-[334px] w-full duration-200'
+                            transition={{ delay: 0.7 + footer_lisks.length * 0.3 }}
                         >
-                            <h4 className='text-22 font-urban text-black-5 font-semibold'>Our Newsletter</h4>
+                            <h4 className='text-22 font-urban text-black-5 font-semibold'>{FOOTER_CONTENT.txt_social_media}</h4>
                             <form onSubmit={(e) => e.preventDefault()} className='relative mt-4 lg:mt-7'>
                                 <input
                                     type='text'
@@ -86,7 +82,7 @@ const Footer = () => {
                                 </button>
                             </form>
                             <div className='mt-4 lg:mt-8'>
-                                <h4 className='text-18 text-black-5 font-semibold'>Social media</h4>
+                                <h4 className='text-18 text-black-5 font-semibold'>{FOOTER_CONTENT.txt_social_media}</h4>
                                 <div className='flex gap-5 mt-4'>
                                     {social_links?.map((social) => {
                                         return (
@@ -101,8 +97,8 @@ const Footer = () => {
                             </div>
                         </Motion>
                     </div>
-                </div>
-            </div>
+                </div >
+            </div >
             <div className='py-5 flex items-center justify-center gap-1 text-15 font-medium text-gray-1 font-urban'>
                 <p>
                     {text_copyright}{' '}

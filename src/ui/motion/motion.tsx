@@ -563,7 +563,220 @@ const effectVariants = {
             restDelta: 0.01,
             restSpeed: 2
         }
-    }
+    },
+
+    // =========================
+    // OTHER Effect: Other effect.
+    // =========================
+    pulseBox: {
+        animate: {
+            boxShadow: [
+                '0 0 0 0 rgba(255,255,255,0.4)',
+                '0 0 0 45px rgba(255,255,255,0)',
+                '0 0 0 0 rgba(255,255,255,0)'
+            ]
+        },
+        transition: { duration: 1.2, times: [0, 0.7, 1], repeat: Infinity }
+    },
+    sectionAnimation: {
+        animate: [
+            { width: '0', opacity: 1, transition: { duration: 0.1 } },
+            { width: '100%', opacity: 1, transition: { duration: 0.3 } },
+            { width: '100%', opacity: 0, transition: { duration: 0.1 } },
+            { width: '0', opacity: 0, transition: { duration: 0.5 } }
+        ]
+    },
+    aboutSm: {
+        animate: { y: [0, 60, 50] },
+        transition: { duration: 1, times: [0, 0.5, 1], repeat: Infinity }
+    },
+    heroThumb: {
+        animate: { y: [-20, 0] },
+        transition: { duration: 1, repeat: Infinity, repeatType: 'reverse' }
+    },
+    tpleftright: {
+        animate: { x: [0, -20] },
+        transition: { duration: 1, repeat: Infinity, repeatType: 'reverse' }
+    },
+    tprotate: {
+        animate: { rotateY: [0, 360] },
+        transition: { duration: 2, repeat: Infinity, ease: 'linear' }
+    },
+    tptranslateY2: {
+        animate: { y: [-30, 20] },
+        transition: { duration: 1.2, repeat: Infinity, repeatType: 'reverse' }
+    },
+    dash: {
+        animate: { strokeDashoffset: [3000, 0] },
+        transition: { duration: 2, repeat: Infinity }
+    },
+    lineDash: {
+        animate: { strokeDashoffset: [0, 1000] },
+        transition: { duration: 2, repeat: Infinity }
+    },
+    lineDash2: {
+        animate: { strokeDashoffset: [0, -1000] },
+        transition: { duration: 2, repeat: Infinity }
+    },
+    scrollY: {
+        animate: { y: [0, 8] },
+        transition: { duration: 1, repeat: Infinity, repeatType: 'reverse' }
+    },
+    RLsmooth: {
+        animate: { x: [0, 5, 0] },
+        transition: { duration: 1, times: [0, 0.5, 1], repeat: Infinity }
+    },
+    slideUpDown: {
+        animate: { y: [0, -20] },
+        transition: { duration: 1, repeat: Infinity, repeatType: 'reverse' }
+    },
+    tptranslateX2: {
+        animate: { x: [-30, 20] },
+        transition: { duration: 1.2, repeat: Infinity, repeatType: 'reverse' }
+    },
+    rotateCenter: {
+        animate: { rotate: [0, 360] },
+        transition: { duration: 2, repeat: Infinity, ease: 'linear' }
+    },
+    scaleUpDown: {
+        animate: { scale: [0.9, 1] },
+        transition: { duration: 1, repeat: Infinity, repeatType: 'reverse' }
+    },
+    tpupdown: {
+        animate: { y: [0, -20] },
+        transition: { duration: 1, repeat: Infinity, repeatType: 'reverse' }
+    },
+    tpswing: {
+        animate: { rotate: [6, -6] },
+        transition: { duration: 1, repeat: Infinity, repeatType: 'reverse' }
+    },
+    bounceRight: {
+        animate: { y: [0, -35, -20, 0] },
+        transition: { duration: 1, times: [0, 0.4, 0.6, 1], repeat: Infinity }
+    },
+    iconBounce: {
+        animate: { y: [0, -10, -5, 0] },
+        transition: { duration: 1, times: [0, 0.4, 0.6, 1], repeat: Infinity }
+    },
+    moving: {
+        animate: {
+            x: [0, 20, 0, -20, 0],
+            y: [0, 0, -20, 0, 0]
+        },
+        transition: { duration: 2, times: [0, 0.25, 0.5, 0.75, 1], repeat: Infinity }
+    },
+    aboutCircle: {
+        animate: { x: [100, 0] },
+        transition: { duration: 1, repeat: Infinity, repeatType: 'reverse' }
+    },
+    servicesTriangle: {
+        animate: { rotate: [0, 360], y: [0, 100] },
+        transition: { duration: 2, repeat: Infinity }
+    },
+    hero3Dot2: {
+        animate: { y: [-50, 0] },
+        transition: { duration: 1, repeat: Infinity, repeatType: 'reverse' }
+    },
+    tfLeftToRight: {
+        animate: { x: ['0%', '30%', '-30%', '0%'], opacity: [1, 1, 0, 1] },
+        transition: { duration: 2, times: [0, 0.49, 0.5, 1], repeat: Infinity }
+    },
+    rotate2: {
+        animate: { rotate: [0, 360] },
+        transition: { duration: 2, repeat: Infinity, ease: 'linear' }
+    },
+    rotate3: {
+        animate: { rotateZ: [0, 360] },
+        transition: { duration: 2, repeat: Infinity, ease: 'linear' }
+    },
+    circleAnimations: {
+        animate: { rotate: [0, 360] },
+        transition: { duration: 2, repeat: Infinity, ease: 'linear' }
+    },
+    leftright: {
+        animate: { x: [0, '100%', 0] },
+        transition: { duration: 2, times: [0, 0.5, 1], repeat: Infinity }
+    },
+    movinglight: {
+        animate: { x: [0, -70, 0], y: [0, 0, -70, 0] },
+        transition: { duration: 2, times: [0, 0.2, 0.5, 1], repeat: Infinity }
+    },
+    movinglight2: {
+        animate: { x: [0, 70, 0], y: [0, 0, 70, 0] },
+        transition: { duration: 2, times: [0, 0.2, 0.5, 1], repeat: Infinity }
+    },
+    movingtop: {
+        animate: { y: [0, 70, -70, 0] },
+        transition: { duration: 2, times: [0, 0.2, 0.5, 1], repeat: Infinity }
+    },
+    circleAnimation: {
+        animate: { right: ['0%', '100%', '0%'] },
+        transition: { duration: 2, times: [0, 0.5, 1], repeat: Infinity }
+    },
+    headerSlideDown: {
+        initial: { marginTop: -150 },
+        animate: { marginTop: 0, transition: { duration: 0.8 } }
+    },
+    movingleftright1: {
+        animate: {
+            x: [0, 50, 200, 0],
+            y: [0, -50, 0, 0]
+        },
+        transition: { duration: 2, times: [0, 0.4, 0.75, 1], repeat: Infinity }
+    },
+    circleAnimation2: {
+        animate: { left: ['0%', '100%', '0%'] },
+        transition: { duration: 2, times: [0, 0.5, 1], repeat: Infinity }
+    },
+    scroll1: {
+        animate: { top: ['0%', '95%', '0%'] },
+        transition: { duration: 2, times: [0, 0.5, 1], repeat: Infinity }
+    },
+    movingX: {
+        animate: { y: [0, 'calc(100vh - 100%)', 0], rotateX: [0, 180, 180] },
+        transition: { duration: 2, times: [0, 0.5, 1], repeat: Infinity }
+    },
+    trackingInContractBck: {
+        animate: { letterSpacing: [20, 0], opacity: [0, 0.6, 1], z: [150, 0] },
+        transition: { duration: 1.2, times: [0, 0.4, 1], repeat: Infinity }
+    },
+    trackingInContractBck2: {
+        animate: { letterSpacing: [20, 0], opacity: [0, 0.6, 1], z: [150, 0], y: [150, 0] },
+        transition: { duration: 1.2, times: [0, 0.4, 1], repeat: Infinity }
+    },
+    animationglob: {
+        animate: { rotate: [0, 360] },
+        transition: { duration: 2, repeat: Infinity, ease: 'linear' }
+    },
+    zoom: {
+        animate: { scale: [0.7, 1, 0.7] },
+        transition: { duration: 1.2, times: [0, 0.5, 1], repeat: Infinity }
+    },
+    sliderShape: {
+        animate: {
+            borderRadius: [
+                '42% 58% 70% 30% / 45% 45% 55% 55%',
+                '36% 64% 41% 59% / 54% 41% 59% 46%',
+                '100% 60% 60% 100% / 100% 100% 60% 60%',
+                '42% 58% 70% 30% / 45% 45% 55% 55%'
+            ],
+            x: [0, 1, -1, 0],
+            y: [0, 5, -3, 0]
+        },
+        transition: { duration: 2, times: [0, 0.34, 0.67, 1], repeat: Infinity }
+    },
+    zoom2: {
+        animate: { scale: [0.9, 1, 0.9] },
+        transition: { duration: 1.2, times: [0, 0.5, 1], repeat: Infinity }
+    },
+    wobbleVertical: {
+        animate: { y: [0, -10, 0], skewY: [0, 15, 0], rotate: [0, 10, 0] },
+        transition: { duration: 1.2, times: [0, 0.5, 1], repeat: Infinity }
+    },
+    widthcalc: {
+        animate: { width: ['20%', '50%', '90%'], opacity: [1, 0.75, 1] },
+        transition: { duration: 2, times: [0, 0.5, 1], repeat: Infinity }
+    },
 }
 
 export type MotionEffects = keyof typeof effectVariants

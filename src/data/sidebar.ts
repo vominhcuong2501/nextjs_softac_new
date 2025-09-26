@@ -1,5 +1,3 @@
-import { text } from 'stream/consumers'
-
 export const SIDEBAR_CONTENT = {
   list_images: [
     {
@@ -25,5 +23,5 @@ export const SIDEBAR_CONTENT = {
   ],
   text_instagram: 'instagram',
   text_address: '27 Division St, New York, <br />NY 10002, USA',
-  text_we_are_here: 'we are here',
+  text_we_are_here: 'we are here'
 }

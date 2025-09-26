@@ -1,6 +1,6 @@
 import React, { SVGAttributes } from "react";
 
-const RightArrow = ({ ...props }: SVGAttributes<SVGSVGElement>) => {
+export const RightArrow = ({ ...props }: SVGAttributes<SVGSVGElement>) => {
   return (
     <svg
       width="14"
@@ -28,4 +28,4 @@ const RightArrow = ({ ...props }: SVGAttributes<SVGSVGElement>) => {
   );
 };
 
-export default RightArrow;
+

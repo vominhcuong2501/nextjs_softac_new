@@ -1,6 +1,6 @@
 import React, { SVGAttributes } from "react";
 
-const EmailFour = ({ ...props }: SVGAttributes<SVGSVGElement>) => {
+export const EmailFour = ({ ...props }: SVGAttributes<SVGSVGElement>) => {
   return (
     <svg
       width="18"
@@ -32,4 +32,3 @@ const EmailFour = ({ ...props }: SVGAttributes<SVGSVGElement>) => {
   );
 };
 
-export default EmailFour;
