@@ -62,5 +62,15 @@ export const DATA_HERO_AREA = {
       title: 'Icon shape 6',
       effect: 'tpupdown'
     }
-  ]
+  ],
+  txt_offer_the: 'Offer The',
+  txt_best: 'Best',
+  txt_business: 'Business',
+  txt_management: 'Management',
+  txt_with: 'With',
+  txt_software: 'Software',
+  txt_description:
+    "A simple solution for building the optimal work <br className='hidden md:block' /> schedule for your business.",
+  btn_get_started: 'Get Started',
+  btn_try_a_demo: 'Try a Demo'
 }

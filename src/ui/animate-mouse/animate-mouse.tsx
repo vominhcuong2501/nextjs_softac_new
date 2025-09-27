@@ -2,11 +2,18 @@
 import Link from 'next/link'
 import React, { useContext, useEffect, useRef } from 'react'
 import { AppContext } from '@/context'
+import { useDisplay } from '@/hooks'
+import { DISPLAY_DEVICE } from '@/constants'
 
 export const AnimateMouse = () => {
+
   const { isEnter } = useContext(AppContext);
+
   const eRef = useRef<HTMLDivElement | null>(null);
+
   const tRef = useRef<HTMLDivElement | null>(null);
+
+
   let n,
     i = 0,
     o = false;
@@ -40,13 +47,13 @@ export const AnimateMouse = () => {
     <React.Fragment>
       <div
         ref={eRef}
-        className={`mouseCursor cursor-outer ${isEnter ? "cursor-big" : ""}`}
+        className={`mouseCursor cursor-outer ${isEnter ? "cursor-big !m-0" : ""}`}
       ></div>
       <div
         ref={tRef}
-        className={`mouseCursor cursor-inner ${isEnter ? "cursor-big" : ""}`}
+        className={`mouseCursor cursor-inner ${isEnter ? "cursor-big !m-0" : ""}`}
       >
-        <Link href="#" ><i className="fas fa-play"></i></Link>
+        <Link href="#" target='_blank' className={`${isEnter && '!opacity-100 !visible'}`} ><i className="fas fa-play"></i></Link>
       </div>
     </React.Fragment>
   );

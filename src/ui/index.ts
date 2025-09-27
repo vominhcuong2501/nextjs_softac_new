@@ -11,3 +11,9 @@ export * from './menu-mobile'
 export * from './sidebar'
 
 export * from './animate-mouse'
+
+export * from './modal'
+
+export * from './button'
+
+export * from './count-down'

@@ -1,7 +1,3 @@
-export * from './footer'
+export * from './common'
 
-export * from './menu-data'
-
-export * from './sidebar'
-
-export * from './hero-area'
+export * from './home'

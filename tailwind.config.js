@@ -22,10 +22,6 @@ const tailwindConfig = {
       container: {
         center: true,
         screens: {
-          xs: '480px',
-          sm: '640px',
-          md: '768px',
-          lg: '1024px',
           xl: '1312px',
         },
         padding: {
@@ -125,7 +121,8 @@ const tailwindConfig = {
           7: '#080829',
           8: '#141125',
           9: '#18171F',
-          10: '#0B0416'
+          10: '#0B0416',
+          11: '#00000080'
         },
         green: {
           DEFAULT: '#5FC33B',
@@ -401,7 +398,9 @@ const tailwindConfig = {
         49: '0px 20px 20px rgba(28, 9, 61, 0.2)',
         50: '0px 30px 60px rgba(0, 0, 0, 0.5)',
         51: '0px 0px 6px rgba(187, 255, 94, 0.3)',
-        52: '0px 1px 2px rgba(32, 33, 36, 0.1)'
+        52: '0px 1px 2px rgba(32, 33, 36, 0.1)',
+        53: '0px -30px 50px rgba(29, 12, 7, 0.1)',
+        54: '0px 20px 50px rgba(32, 33, 36, 0.14)'
       },
       transitionTimingFunction: {
         'cubic-bezier-1': 'cubic-bezier(0.14, 0, 0, 1.01)',
@@ -409,7 +408,8 @@ const tailwindConfig = {
         'cubic-bezier-3': 'cubic-bezier(1, 0.99, 0.03, 0.01)',
         'cubic-bezier-4': 'cubic-bezier(0.2, 0.8, 0.2, 1)',
         'cubic-bezier-5': 'cubic-bezier(0.075, 0.82, 0.165, 1)',
-        'cubic-bezier-6': 'cubic-bezier(.165,.84,.44,1)'
+        'cubic-bezier-6': 'cubic-bezier(.165,.84,.44,1)',
+        'cubic-bezier-7': 'cubic-bezier(0.165, 0.84, 0.44, 1)'
       },
       transitionDuration: {
         '900': '900ms',

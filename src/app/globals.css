@@ -9,7 +9,7 @@
     height: 100%;
   }
   body {
-    @apply font-body text-slate-800 bg-white;
+    @apply font-body text-slate-800 bg-white leading-1-2;
   }
 
   a,
@@ -33,8 +33,7 @@
 @layer utilities {
   /* Blue button */
   .tp-btn {
-    @apply inline-block bg-blue-5 text-white h-[45px] leading-[45px] rounded-[30px] px-[35px] text-[15px] font-semibold text-center capitalize relative overflow-hidden z-[1] transition-all duration-500;
-    @apply xs:h-[45px] xs:px-[25px] xs:text-[15px];
+    @apply inline-flex flex-col items-center justify-center bg-blue-5 text-white h-11 rounded-[30px] px-6 sm:px-9 text-15 font-semibold text-center capitalize relative overflow-hidden z-[1] transition-all duration-500;
   }
   .tp-btn span {
     @apply relative z-[5] transition-all duration-300 text-white;
@@ -47,8 +46,7 @@
 
   /* White button */
   .tp-btn-white {
-    @apply bg-white text-black h-[45px] leading-[45px] rounded-[30px] px-[35px] text-[15px] font-semibold text-center capitalize overflow-hidden transition-colors duration-400;
-    @apply xs:h-[45px] xs:px-[25px] xs:text-[15px];
+    @apply bg-white text-black h-11 rounded-[30px] px-6 lg:px-9 text-15 font-semibold text-center capitalize overflow-hidden transition-colors duration-400;
   }
   .tp-btn-white span {
     @apply relative z-[5] transition-all duration-500;
@@ -64,8 +62,7 @@
 
   /* Orange button */
   .tp-btn-orange {
-    @apply inline-block bg-orange text-white h-[36px] leading-[36px] rounded-[30px] px-[30px] text-[15px] font-semibold text-center capitalize relative overflow-hidden z-[1] transition-all duration-500;
-    @apply xs:h-[36px] xs:px-[20px] xs:text-[14px];
+    @apply inline-flex flex-col items-center justify-center bg-orange text-white h-9 rounded-[30px] px-5 lg:px-8 text-15 font-semibold text-center capitalize relative overflow-hidden z-[1] transition-all duration-500;
   }
   .tp-btn-orange span {
     @apply relative z-[99] transition-all duration-300 text-white;
@@ -78,9 +75,8 @@
 
   /* Green button small */
   .tp-btn-green-sm {
-    @apply inline-block text-white font-mont h-[42px] leading-[42px] px-[30px] font-semibold text-[15px] text-center tracking-[-0.02em] relative overflow-hidden z-[1] transition-all duration-500 rounded-[10px] shadow-3;
+    @apply inline-flex flex-col items-center justify-center text-white font-mont h-10 px-5 lg:px-8 font-semibold text-15 text-center tracking-[-0.02em] relative overflow-hidden z-[1] transition-all duration-500 rounded-xl shadow-3;
     background: linear-gradient(180deg, #b1ff36 -23%, #1d863c 100%);
-    @apply xs:h-[42px] xs:px-[25px] xs:text-[15px];
   }
   .tp-btn-green-sm:hover {
     @apply shadow-4 -translate-y-[2px] text-white;
@@ -88,9 +84,8 @@
 
   /* Green button large */
   .tp-btn-green {
-    @apply inline-block text-white font-mont h-[52px] leading-[52px] px-[30px] font-semibold text-[16px] text-center tracking-[-0.02em] relative overflow-hidden z-[1] transition-all duration-500 rounded-[10px] shadow-3;
+    @apply inline-flex flex-col items-center justify-center text-white font-mont h-[52px] px-6 lg:px-8 font-semibold text-16 text-center tracking-[-0.02em] relative overflow-hidden z-[1] transition-all duration-500 rounded-xl shadow-3;
     background: linear-gradient(180deg, #b1ff36 -23%, #1d863c 100%);
-    @apply xs:h-[52px] xs:px-[25px] xs:text-[16px];
   }
   .tp-btn-green:hover {
     @apply shadow-4 -translate-y-[2px] text-white;
@@ -98,9 +93,8 @@
 
   /* Blue button large with circle effect */
   .tp-btn-blue-lg {
-    @apply inline-block bg-blue-5 shadow-2 rounded-[100px] text-white font-urban h-[60px] leading-[61px] px-[35px] font-bold text-[16px] text-center tracking-[0.02em] relative overflow-hidden z-[1] transition-all duration-1000;
+    @apply inline-flex flex-col items-center justify-center bg-blue-5 shadow-2 rounded-[100px] text-white font-urban h-[50px] lg:h-[60px] px-6 lg:px-9 font-bold text-16 text-center tracking-[0.02em] relative overflow-hidden z-[1] transition-all duration-1000;
     position: relative;
-    @apply xs:h-[50px] xs:leading-[50px] xs:px-[25px] xs:text-[16px];
   }
   .tp-btn-blue-lg.purple-bg {
     @apply bg-blue-3;
@@ -143,8 +137,7 @@
 
   /* Blue button small */
   .tp-btn-blue-sm {
-    @apply inline-block bg-blue-5 shadow-2 rounded-[100px] text-white font-urban h-[48px] leading-[48px] px-[35px] font-bold text-[16px] text-center tracking-[0.02em] relative overflow-hidden z-[1] transition-all duration-500;
-    @apply xs:h-[48px] xs:px-[25px] xs:text-[16px];
+    @apply inline-flex flex-col items-center justify-center bg-blue-5 shadow-2 rounded-[100px] text-white font-urban h-12 px-6 lg:px-9 font-bold text-16 text-center tracking-[0.02em] relative overflow-hidden z-[1] transition-all duration-500;
   }
   .tp-btn-blue-sm span {
     @apply relative z-[5] transition-all duration-300 text-white;
@@ -157,8 +150,7 @@
 
   /* Border blue button */
   .tp-btn-border {
-    @apply inline-block text-white font-urban border border-blue-5 rounded-[100px] h-[60px] leading-[60px] px-[35px] font-bold text-[16px] text-center tracking-[0.02em] relative overflow-hidden z-[1];
-    @apply xs:h-[50px] xs:leading-[50px] xs:px-[25px] xs:text-[16px];
+    @apply inline-flex flex-col items-center justify-center text-white font-urban border border-blue-5 rounded-[100px] h-[50px] lg:h-[60px] px-6 lg:px-9 font-bold text-16 text-center tracking-[0.02em] relative overflow-hidden z-[1];
   }
   .tp-btn-border span {
     @apply relative z-[5] transition-all duration-700 text-theme-1;
@@ -172,14 +164,12 @@
 
   /* White solid button */
   .tp-btn-white-solid {
-    @apply inline-block text-white font-urban bg-white/25 backdrop-blur-[5px] rounded-[100px] h-[36px] px-[22px] font-bold text-[15px] leading-[36px] text-center tracking-[0.02em] relative overflow-hidden z-[1] transition-all duration-500;
-    @apply xs:h-[36px] xs:px-[15px] xs:text-[15px];
+    @apply inline-flex flex-col items-center justify-center text-white font-urban bg-white/25 backdrop-blur-[5px] rounded-[100px] h-9 px-4 lg:px-5 font-bold text-15 text-center tracking-[0.02em] relative overflow-hidden z-[1] transition-all duration-500;
   }
 
   /* Yellow button */
   .tp-btn-yellow {
-    @apply inline-block bg-yellow-5 rounded-[100px] h-[42px] px-[32px] font-medium text-[16px] leading-[42px] text-center tracking-[0.02em] relative overflow-hidden z-[1] transition-all duration-500;
-    @apply xs:h-[42px] xs:px-[20px] xs:text-[14px];
+    @apply inline-flex flex-col items-center justify-center bg-yellow-5 rounded-[100px] h-10 px-5 lg:px-8 font-medium text-14 lg:text-16 text-center tracking-[0.02em] relative overflow-hidden z-[1] transition-all duration-500;
   }
   .tp-btn-yellow span {
     @apply relative z-[5] transition-all duration-300 text-black;
@@ -194,15 +184,13 @@
 
   /* Yellow button small */
   .tp-btn-yellow-sm {
-    @apply inline-block text-black bg-yellow-5 backdrop-blur-[5px] rounded-[100px] h-[50px] px-[24px] font-medium text-[17px] leading-[50px] text-center relative overflow-hidden z-[1] transition-all duration-500;
-    @apply xs:h-[50px] xs:px-[15px] xs:text-[15px];
+    @apply inline-flex flex-col items-center justify-center text-black bg-yellow-5 backdrop-blur-[5px] rounded-[100px] h-[50px] px-4 lg:px-6 font-medium text-14 lg:text-17 text-center relative overflow-hidden z-[1] transition-all duration-500;
   }
 
   /* Yellow button large */
   .tp-btn-yellow-lg {
-    @apply inline-block text-black bg-[#FFCE5A] rounded-[100px] h-[60px] px-[32px] font-semibold text-[16px] leading-[60px] text-center relative overflow-hidden z-[1] transition-all duration-1000;
+    @apply inline-flex flex-col items-center justify-center text-black bg-[#FFCE5A] rounded-[100px] h-[50px] lg:h-[60px] px-6 lg:px-8 font-semibold text-16 text-center relative overflow-hidden z-[1] transition-all duration-1000;
     position: relative;
-    @apply xs:h-[50px] xs:leading-[50px] xs:px-[25px] xs:text-[16px];
   }
   .tp-btn-yellow-lg.yellow-bg {
     background-color: #f8ff35;
@@ -237,12 +225,11 @@
 
   /* Yellow border button */
   .tp-btn-yellow-border {
-    @apply h-[60px] leading-[57px] pl-[38px] pr-[28px] rounded-[100px] border-2 border-yellow-5 text-yellow-5 text-[16px] font-semibold relative overflow-hidden z-[1] inline-block transition-all duration-300;
+    @apply h-[50px] lg:h-[60px] pl-4 lg:pl-9 pr-4 lg:pr-7 rounded-[100px] border-2 border-yellow-5 text-yellow-5 text-16 font-semibold relative overflow-hidden z-[1] inline-flex flex-col items-center justify-center transition-all duration-300;
     position: relative;
-    @apply xs:h-[50px] xs:leading-[47px] xs:pl-[18px] xs:pr-[18px] xs:text-[15px];
   }
   .tp-btn-yellow-border i {
-    @apply pl-[60px] relative z-[5] text-black text-[22px] align-middle;
+    @apply pl-[60px] relative z-[5] text-black text-22 align-middle;
     transform: translateY(2px);
   }
   .tp-btn-yellow-border::before {
@@ -266,9 +253,8 @@
 
   /* Service button */
   .tp-btn-service {
-    @apply h-[40px] leading-[35px] border border-white/10 text-yellow-5 rounded-[20px] inline-block relative z-[1] px-[30px] font-semibold text-[15px] transition-all duration-300;
+    @apply h-10 border border-white/10 text-yellow-5 rounded-[20px] inline-flex flex-col items-center justify-center relative z-[1] px-4 lg:px-8 font-semibold text-15 transition-all duration-300;
     border-width: 1.5px;
-    @apply xs:h-[40px] xs:px-[15px] xs:text-[15px];
   }
   .tp-btn-service:hover {
     @apply bg-yellow-5 text-black border-yellow-5;
@@ -276,9 +262,8 @@
 
   /* Grey button */
   .tp-btn-grey {
-    @apply h-[60px] leading-[60px] text-black rounded-[30px] inline-block relative z-[1] px-[35px] font-semibold text-[16px] bg-white transition-all duration-1000 overflow-hidden;
+    @apply h-[50px] lg:h-[60px] text-black rounded-[30px] inline-flex flex-col items-center justify-center relative z-[1] px-6 lg:px-9 font-semibold text-16 bg-white transition-all duration-1000 overflow-hidden;
     position: relative;
-    @apply xs:h-[50px] xs:leading-[50px] xs:px-[25px] xs:text-[16px];
   }
   .tp-btn-grey::after {
     content: '';
@@ -310,8 +295,7 @@
 
   /* Purple button */
   .tp-btn-purple {
-    @apply h-[40px] leading-[38px] text-black rounded-[30px] inline-block relative z-[1] px-[35px] font-semibold text-[14px] bg-gray-8 transition-all duration-300;
-    @apply xs:h-[40px] xs:px-[15px] xs:text-[14px];
+    @apply h-10  text-black rounded-[30px] inline-flex flex-col items-center justify-center relative z-[1] px-6 lg:px-9 font-semibold text-14 bg-gray-8 transition-all duration-300;
   }
   .tp-btn-purple:hover {
     @apply text-white bg-purple-2;
@@ -319,8 +303,7 @@
 
   /* Purple button large */
   .tp-btn-purple-lg {
-    @apply h-[60px] leading-[60px] text-white bg-purple-2 rounded-[30px] inline-block relative z-[1] px-[35px] font-semibold text-[16px] transition-all duration-300;
-    @apply xs:h-[50px] xs:leading-[50px] xs:px-[25px] xs:text-[16px];
+    @apply h-[50px] lg:h-[60px] text-white bg-purple-2 rounded-[30px] inline-flex flex-col items-center justify-center relative z-[1] px-6 lg:px-9 font-semibold text-16 transition-all duration-300;
   }
   .tp-btn-purple-lg:hover {
     @apply text-white bg-purple-2;
@@ -328,9 +311,8 @@
 
   /* Yellow solid button */
   .tp-btn-yellow-solid {
-    @apply h-[60px] leading-[60px] text-black bg-[#DDFF7B] rounded-[30px] inline-block relative z-[1] px-[35px] font-semibold text-[16px] transition-all duration-300 overflow-hidden;
+    @apply h-[50px] lg:h-[60px] text-black bg-yellow-6 rounded-[30px] inline-flex flex-col items-center justify-center relative z-[1] px-6 lg:px-9 font-semibold text-16 transition-all duration-300 overflow-hidden;
     position: relative;
-    @apply xs:h-[50px] xs:leading-[50px] xs:px-[25px] xs:text-[16px];
   }
   .tp-btn-yellow-solid.circle-effect::after {
     content: '';
@@ -358,14 +340,12 @@
 
   /* Price button */
   .tp-btn-price {
-    @apply inline-flex items-center justify-center bg-blue-6 text-blue-5 h-[45px] leading-[45px] rounded-[30px] px-[35px] text-[15px] font-semibold text-center capitalize relative overflow-hidden z-[1] transition-all duration-500;
-    @apply xs:h-[45px] xs:px-[25px] xs:text-[15px];
+    @apply inline-flex items-center justify-center bg-blue-6 text-blue-5 h-11 lrounded-[30px] px-6 lg:px-9 text-15 font-semibold text-center capitalize relative overflow-hidden z-[1] transition-all duration-500;
   }
 
   /* Submit button */
   .submit-btn {
-    @apply bg-blue-4 text-center h-[55px] px-[20px] inline-block leading-[55px] text-white font-semibold text-[16px];
-    @apply xs:h-[45px] xs:px-[15px] xs:text-[15px];
+    @apply bg-blue-4 text-center h-11 lg:h-[55px] px-5 inline-flex flex-col items-center justify-center text-white font-semibold text-16;
   }
   .submit-btn:hover {
     @apply text-white;
@@ -373,8 +353,7 @@
 
   /* Signin button */
   .signin-btn {
-    @apply bg-blue-4 text-center h-[55px] px-[100px] inline-block leading-[55px] text-white font-semibold text-[16px] rounded-[12px];
-    @apply xs:h-[45px] xs:px-[25px] xs:text-[15px];
+    @apply bg-blue-4 text-center h-11 lg:h-[55px] px-6 lg:px-[100px] inline-flex flex-col items-center justify-center text-white font-semibold text-16 rounded-xl;
   }
   .signin-btn:hover {
     background-color: #6b14fa;
@@ -383,11 +362,10 @@
 
   /* Inner button */
   .tp-btn-inner {
-    @apply inline-block bg-blue-4 text-white h-[50px] leading-[50px] rounded-[30px] px-[35px] text-[15px] font-semibold text-center capitalize relative overflow-hidden z-[1] transition-all duration-500;
-    @apply xs:h-[45px] xs:px-[25px] xs:text-[15px];
+    @apply inline-flex flex-col items-center justify-center bg-blue-4 text-white h-11 lg:h-[50px] rounded-[30px] px-6 lg:px-9 text-15 font-semibold text-center capitalize relative overflow-hidden z-[1] transition-all duration-500;
   }
   .tp-btn-inner span {
-    @apply relative z-[5] transition-all duration-300 text-white inline-block -translate-y-[2px];
+    @apply relative z-[5] transition-all duration-300 text-white inline-flex flex-col items-center justify-center -translate-y-[2px];
     transition-delay: 0.3s;
   }
   .tp-btn-inner:hover span {
@@ -401,9 +379,8 @@
 
   /* Inner border button */
   .tp-btn-inner-border {
-    @apply inline-block text-white h-[40px] leading-[36px] rounded-[30px] px-[30px] text-[15px] font-semibold text-center relative overflow-hidden z-[1] transition-all duration-500 border border-white/20;
+    @apply inline-flex flex-col items-center justify-center text-white h-10 rounded-[30px] px-4 lg:px-8 text-15 font-semibold text-center relative overflow-hidden z-[1] transition-all duration-500 border border-white/20;
     border-width: 1.5px;
-    @apply xs:h-[36px] xs:px-[15px] xs:text-[15px];
   }
   .tp-btn-inner-border i {
     @apply pl-[7px];
